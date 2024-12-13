@@ -2,7 +2,47 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.image-container {
+  width: 100%; /* Adjust to the desired width, e.g., 60%, 400px, etc. */
+  height: 600px; /* This controls how much of the image is visible initially */
+  overflow-y: scroll; /* Adds a vertical scrollbar to the container */
+  border: 1px solid #ccc; /* Optional: For visual clarity of the container */
+  
+    /* Center horizontally */
+  
+}
+p {
+  font-size: 20px;
+}
+ul {
+  list-style-type: none !important;
+  text-align: center;
+}
 
+.center-container {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100%;             /* Full height of the viewport */
+}
+.highlighted-list {
+  list-style-type: none;
+  padding: 0;  /* Removes padding added by default */
+  margin: 0;   /* Removes default margin */
+}
+.highlighted-item {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 10px;
+  margin: 5px 0; /* Adds space between items */
+  /* border-left: 5px solid #ff3860; Blue left border for emphasis */
+  font-size: 18px; /* Larger text size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.image-container img {
+  width: 100%; /* Ensures the image fits the container’s width */
+  display: block; /* Avoids unwanted whitespace under the image */
+}
 .footer .icon-link {
     font-size: 25px;
     color: #000;
@@ -21,6 +61,7 @@ body {
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
+  
 }
 
 .teaser {
@@ -106,24 +147,62 @@ body {
     width: 100%;
     height: 100%;
 }
-
+.carousel-image {
+  width: auto;   /* Makes the image fill the container horizontally */
+  height: 500px; /* Fixed height for all images */
+  object-fit: contain; /* Ensures the image covers the area without distorting */
+}
 .publication-body img {
 }
 
 .results-carousel {
   overflow: hidden;
+  /* height: "200px"; */
+  width: auto;   /* Makes the image fill the container horizontally */
+  height: 600px; /* Fixed height for all images */
+  object-fit: cover;
 }
+
 
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
   padding: 20px;
   font-size: 0;
+  display: center;
+  /* display: flex;     */
+    /* Use flexbox to center content inside each item */
+  /* justify-content: center;  Horizontally center the image */
+  align-items: center;    
+    /* Vertically center the image */
+  text-align: center; 
+  
 }
-
+.performance-carousel {
+  overflow: hidden;
+  /* height: "200px"; */
+  width: 100%;   /* Makes the image fill the container horizontally */
+  height: auto; /* Fixed height for all images */
+  object-fit: contain;
+}
+.performance-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+  object-fit: contain;
+  display: center;
+  /* display: flex;     */
+    /* Use flexbox to center content inside each item */
+  /* justify-content: center;  Horizontally center the image */
+  align-items: center;    
+    /* Vertically center the image */
+  text-align: center; 
+}
 .results-carousel video {
   margin: 0;
 }
+
 
 .slider-pagination .slider-page {
   background: #000000;
