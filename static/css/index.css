@@ -157,7 +157,7 @@ ul {
 .results-carousel {
   overflow: hidden;
   width: 100%;  /* Makes the carousel fill the container horizontally */
-  height: 600px; /* Fixed height for the carousel container */
+  height: 500px; /* Fixed height for the carousel container */
 }
 
 .results-carousel .item {

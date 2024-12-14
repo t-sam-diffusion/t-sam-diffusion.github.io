@@ -129,8 +129,13 @@
         <!-- <h2 class="title is-3">Abstract</h2> -->
         <!-- <div class="content has-text-justified"> -->
           <p>
-        In text-to-image generation, the image often fails to faithfully represent the content in the input text. We have developed novel a method (T-SAM) to mitigate this problem which is:
-        <ul>
+        In text-to-image generation, the image often fails to faithfully represent the content in the input text. We developed novel a method (T-SAM) to mitigate this problem which is:
+        <p style="text-align: center;">
+          <span style="font-weight: bold; font-size: 24px; color: rgb(158, 5, 5);">training-free,</span> 
+          <span style="font-weight: bold; font-size: 24px; color: rgb(2, 85, 28);">free of external input,</span> and 
+          <span style="font-weight: bold; font-size: 24px; color: rgb(75, 2, 112);">theoretically sound.</span>
+        </p>
+        <!-- <ul>
           
           <li class = "highlighted-item">training-free,</li>
           <li class = "highlighted-item">free of external input,</li>
@@ -138,7 +143,7 @@
           <li class = "highlighted-item">compute efficient,</li>
           <li class = "highlighted-item">theoretically sound.</li>
 
-      </ul>
+      </ul> -->
       </div>
       <!-- </div> -->
     <!-- </div> -->
@@ -147,14 +152,11 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class = "container is-max-desktop content">
-    <div class="image-container">
+    <div style = "text-align: center">
       <!-- <h2 class="title">Text-Image Alignment</h2> -->
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/figure_collect_fixed.png"width="100%" height="550" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
       </div>
       </div>
       </div>
@@ -185,7 +187,7 @@
       <div class="item">
         <h2 class="title is-3">Method</h2>
         <p>
-       In a nutshell, out method optimizes latent variables in diffusion models based on the self-attention matrix in the text encoder. <!-- Your image here -->
+       In a nutshell, out method regularizes cross-attention maps in diffusion models based on the self-attention matrix in the text encoder. <!-- Your image here -->
         </p>
         <div style="text-align: center;">
         <img src="static/images/method.png"width="70%" height="550" alt="MY ALT TEXT"/>
@@ -227,7 +229,7 @@
   <div class="hero-body">
     <div class="container is-max-desktop content">
       <h2 class="title is-3">The problem with text embeddings</h2>
-      <p>Our observations are summarized in the following plots. We show that text embeddings fail to encode the syntactic relationships between words. In contrast, the self-attention matrix of the text encoder reflects those relationships.</p>
+      <p>Our observations are summarized in the following plots.</p>
       <div id="results-carousel" class="carousel results-carousel">
 
         <div class="item">
@@ -270,7 +272,6 @@
       <h2 class="title is-3">Performance</h2>
       <p>Our observations are summarized in the following plots. We show that text embeddings fail to encode the syntactic relationships between words. In contrast, the self-attention matrix of the text encoder reflects those relationships.</p>
       <div id="performance-carousel" class="carousel performance-carousel">
-
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/tifa_scores_comparison.png" class="carousel-image" alt="MY ALT TEXT"/>
@@ -369,7 +370,8 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <section class="hero is-light" id="BibTeX">
+    <div class = "hero-body">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{kim2024text,
@@ -379,20 +381,19 @@
         year={2024}
       }</code></pre>
     </div>
+  </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <!-- <footer class="footer">
+  <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
 
-          <p>
+          <p style = "font-size: 13px" >
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
         </div>
@@ -405,7 +406,7 @@
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+    <!-- End of Statcounter Code
 
   </body>
   </html>
