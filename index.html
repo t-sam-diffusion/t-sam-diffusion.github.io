@@ -156,9 +156,6 @@
           First image description.
         </h2>
       </div>
-          <h2 class="subtitle has-text-centered">
-            Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-          </h2>
       </div>
       </div>
     </div>
@@ -190,11 +187,13 @@
         <p>
        In a nutshell, out method optimizes latent variables in diffusion models based on the self-attention matrix in the text encoder. <!-- Your image here -->
         </p>
+        <div style="text-align: center;">
         <img src="static/images/method.png"width="70%" height="550" alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
           First image description.
         </h2> -->
       </div>
+    </div>
       </div>
 
       
@@ -231,34 +230,34 @@
       <p>Our observations are summarized in the following plots. We show that text embeddings fail to encode the syntactic relationships between words. In contrast, the self-attention matrix of the text encoder reflects those relationships.</p>
       <div id="results-carousel" class="carousel results-carousel">
 
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/self_attn_val_histogram_objects.png" class="carousel-image" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          The distributions of  text self-attention value  for bound tokens  vs. unbound tokens.
-           The separate  distributions indicate text self-attention maps can indeed represent the syntactic relationships.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/text_emb_histogram_objects.png" class="carousel-image" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          The distributions of text embedding similarity between i) Bound tokens, and ii) Unbound tokens. The distributions show no discernible difference, indicating text embeddings do not effectively represent the syntactic relationships.
-        </h2>
-      </div>
+        <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/self_attn_val_histogram_objects.png" class="carousel-image" alt="MY ALT TEXT"/>
+            <p class="subtitle has-text-centered">
+              The distributions of  text self-attention value  for bound tokens  vs. unbound tokens.
+              The separate  distributions indicate text self-attention maps can indeed represent the syntactic relationships.
+            </p>
+        </div>
+        <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/text_emb_histogram_objects.png" class="carousel-image" alt="MY ALT TEXT"/>
+            <p class="subtitle has-text-centered">
+              The distributions of text embedding similarity between i) Bound tokens, and ii) Unbound tokens. The distributions show no discernible difference, indicating text embeddings do not effectively represent the syntactic relationships.
+            </p>
+        </div>
 
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/a black car and a white clock_combined_heatmaps_visualization.png"  class="carousel-image"alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Comparison of text embedding similarity (left) and the text self-attention map power by 3 (right) for the prompt "a black car and a white clock".
-           In the self-attention maps, "clock" attends more to "white", unlike the text embeddings.
-       </h2>
-     </div>
+        <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/a black car and a white clock_combined_heatmaps_visualization.png"  class="carousel-image"alt="MY ALT TEXT"/>
+            <p class="subtitle has-text-centered">
+              Comparison of text embedding similarity (left) and the text self-attention map power by 3 (right) for the prompt "a black car and a white clock".
+              In the self-attention maps, "clock" attends more to "white", unlike the text embeddings.
+            </p>
+        </div>
 
+      </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
@@ -278,7 +277,7 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/table1.png" class="carousel-image" style="transform: scale(0.8);" alt="MY ALT TEXT"/>
+        <img src="static/images/table1.png" class="carousel-image" style="transform: scale(0.55);" alt="MY ALT TEXT"/>
       </div>
       <div class="item">
         <!-- Your image here -->

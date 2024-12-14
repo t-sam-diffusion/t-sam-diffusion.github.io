@@ -154,29 +154,24 @@ ul {
 }
 .publication-body img {
 }
-
 .results-carousel {
   overflow: hidden;
-  /* height: "200px"; */
-  width: auto;   /* Makes the image fill the container horizontally */
-  height: 600px; /* Fixed height for all images */
-  object-fit: cover;
+  width: 100%;  /* Makes the carousel fill the container horizontally */
+  height: 600px; /* Fixed height for the carousel container */
 }
 
-
 .results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  padding: 20px;
-  font-size: 0;
-  display: center;
-  /* display: flex;     */
-    /* Use flexbox to center content inside each item */
-  /* justify-content: center;  Horizontally center the image */
-  align-items: center;    
-    /* Vertically center the image */
-  text-align: center; 
-  
+  display: flex;
+  flex-direction: column;  /* Ensures that the image and text are stacked vertically */
+  align-items: center;     /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically */
+  text-align: center;      /* Centers the text */
+}
+
+.results-carousel .item img {
+  width: 100%; /* Makes the image fill the container horizontally */
+  height: auto; /* Keeps the aspect ratio intact */
+  max-height: 400px; /* Adjusts the image size within the fixed container height */
 }
 .performance-carousel {
   overflow: hidden;
